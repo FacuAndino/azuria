@@ -577,3 +577,79 @@ footer img:hover {
         display: block;
     }
 }
+
+/*=================================
+  CONTACTO - ENLACES
+=================================*/
+
+.contacto-info a {
+    color: var(--celeste);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contacto-info a:hover {
+    color: var(--blanco);
+}
+
+/* Icono WhatsApp */
+
+.contacto-info .bi-whatsapp,
+footer .bi-whatsapp {
+    font-size: 1.5rem;
+}
+
+/* Color verde del icono de WhatsApp */
+
+.icono-contacto .bi-whatsapp {
+    color: #25D366;
+}
+
+footer a {
+    color: var(--Azul-oscuro);
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #25D366;
+    transform: scale(1.15);
+}
+
+/*=================================
+  FLEXBOX RESPONSIVE
+=================================*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.flex-item {
+    flex: 1 1 250px;
+    padding: 1.5rem;
+    background-color: var(--blanco);
+    border-radius: 15px;
+}
+
+/*=================================
+  RESPONSIVE CONTACTO
+=================================*/
+
+@media (max-width: 768px) {
+
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-info,
+    .contacto-formulario {
+        padding: 1.5rem;
+    }
+
+    .hero-texto {
+        left: 1rem;
+        right: 1rem;
+    }
+}
